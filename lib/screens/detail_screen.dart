@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:metro_live/models/size.dart';
 import 'package:metro_live/screens/themes.dart';
 import 'package:metro_live/widgets/size_card.dart';
 
@@ -361,7 +360,16 @@ class _DetailScreen extends State<DetailScreen> {
                                 hoverElevation: 0,
                                 disabledElevation: 0,
                                 highlightElevation: 0,
-                                onPressed: () {},
+                                onPressed: () {
+                                  showDialog(
+                                    context: context,
+                                    builder: (BuildContext) =>
+                                        _buildPopupDialog(context),
+                                  );
+                                  //   final popup = BeautifulPopup(
+                                  //       context: context, template: TemplateGift);
+                                  //   popup.show();
+                                },
                                 color: kYellowColor,
                                 child: Text(
                                   'Continue to payment',
@@ -386,4 +394,27 @@ class _DetailScreen extends State<DetailScreen> {
       ),
     );
   }
+}
+
+Widget _buildPopupDialog(BuildContext context) {
+  return new AlertDialog(
+    title: const Text('PAYMENT OPTION'),
+    content: new Column(
+      mainAxisSize: MainAxisSize.min,
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: <Widget>[
+        Text("Cash"),
+        Text("Transfer"),
+      ],
+    ),
+    actions: <Widget>[
+      new FlatButton(
+        onPressed: () {
+          Navigator.of(context).pop();
+        },
+        textColor: Theme.of(context).primaryColor,
+        child: const Text('Close'),
+      ),
+    ],
+  );
 }

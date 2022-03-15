@@ -56,9 +56,8 @@ class HomeScreen extends StatelessWidget {
                         image: 'assets/cow-sun.png',
                         name: 'LEKKI DELIVERY',
                         price: 12000,
-                        pricePromo: 8000,
-                        note:
-                            'Pembelian diatas 5  item bonus satu burger promo berlaku hanya pengiriman radius 2 KM setiap pembelian mendapat 1 kupon burger 10 kupon burger bisa ditukar dengan 1 burger',
+                        pricePromo: 10000,
+                        note: '',
                         isPromo: false),
                   ),
                   MenuCard(
@@ -66,10 +65,9 @@ class HomeScreen extends StatelessWidget {
                         id: 1,
                         image: 'assets/cow-sun.png',
                         name: 'KETU DELIVERY',
-                        price: 20000,
+                        price: 7000,
                         pricePromo: 22000,
-                        note:
-                            'Pembelian diatas 5  item bonus satu burger promo berlaku hanya pengiriman radius 2 KM setiap pembelian mendapat 1 kupon burger 10 kupon burger bisa ditukar dengan 1 burger',
+                        note: ' ',
                         isPromo: false),
                   ),
                   MenuCard(
@@ -79,8 +77,7 @@ class HomeScreen extends StatelessWidget {
                         name: 'Ikorodu Delivery',
                         price: 10000,
                         pricePromo: 9000,
-                        note:
-                            'Pembelian diatas 5  item bonus satu burger promo berlaku hanya pengiriman radius 2 KM setiap pembelian mendapat 1 kupon burger 10 kupon burger bisa ditukar dengan 1 burger',
+                        note: ' ',
                         isPromo: false),
                   ),
                   MenuCard(
@@ -90,8 +87,7 @@ class HomeScreen extends StatelessWidget {
                         name: 'LIVESTOCK',
                         price: 22000,
                         pricePromo: 00,
-                        note:
-                            'Pembelian diatas 5  item bonus satu burger promo berlaku hanya pengiriman radius 2 KM setiap pembelian mendapat 1 kupon burger 10 kupon burger bisa ditukar dengan 1 burger',
+                        note: ' ',
                         isPromo: false),
                   ),
                 ],
