@@ -2,14 +2,14 @@ import 'package:flutter/material.dart';
 
 import '../../themes.dart';
 
-class Isolo extends StatefulWidget {
-  const Isolo({Key? key}) : super(key: key);
+class Ijako extends StatefulWidget {
+  const Ijako({Key? key}) : super(key: key);
 
   @override
-  State<Isolo> createState() => _IsoloState();
+  State<Ijako> createState() => _IjakoState();
 }
 
-class _IsoloState extends State<Isolo> {
+class _IjakoState extends State<Ijako> {
   int i = 1;
 
   int dataPrice = 3000;
@@ -122,7 +122,7 @@ class _IsoloState extends State<Isolo> {
                             Row(
                               children: [
                                 Text(
-                                  'ISOLO ROUTE',
+                                  'IJAKO ROUTE',
                                   style: poppinsTextStyle.copyWith(
                                     fontSize: 22,
                                     fontWeight: FontWeight.w500,

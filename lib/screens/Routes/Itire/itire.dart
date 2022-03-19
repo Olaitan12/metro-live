@@ -64,51 +64,6 @@ class _ItireState extends State<Itire> {
     });
   }
 
-  void _clickMini() {
-    setState(() {
-      price = dataPrice * i;
-      pricePromo = dataPricePromo * i;
-
-      isMini = true;
-      isSedang = false;
-      isBesar = false;
-      isSuperBesar = false;
-    });
-  }
-
-  void _clickSedang() {
-    setState(() {
-      price = (dataPrice + 1000) * i;
-      pricePromo = (dataPricePromo + 1000) * i;
-      isMini = false;
-      isSedang = true;
-      isBesar = false;
-      isSuperBesar = false;
-    });
-  }
-
-  void _clickBesar() {
-    setState(() {
-      price = (dataPrice + 2500) * i;
-      pricePromo = (dataPricePromo + 1500) * i;
-      isMini = false;
-      isSedang = false;
-      isBesar = true;
-      isSuperBesar = false;
-    });
-  }
-
-  void _clickSuperBesar() {
-    setState(() {
-      price = (dataPrice + 5000) * i;
-      pricePromo = (dataPricePromo + 3000) * i;
-      isMini = false;
-      isSedang = false;
-      isBesar = false;
-      isSuperBesar = true;
-    });
-  }
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(

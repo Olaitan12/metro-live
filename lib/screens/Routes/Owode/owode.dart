@@ -2,21 +2,21 @@ import 'package:flutter/material.dart';
 
 import '../../themes.dart';
 
-class Isolo extends StatefulWidget {
-  const Isolo({Key? key}) : super(key: key);
+class Owode extends StatefulWidget {
+  const Owode({Key? key}) : super(key: key);
 
   @override
-  State<Isolo> createState() => _IsoloState();
+  State<Owode> createState() => _OwodeState();
 }
 
-class _IsoloState extends State<Isolo> {
+class _OwodeState extends State<Owode> {
   int i = 1;
 
-  int dataPrice = 3000;
-  int dataPricePromo = 2000;
+  int dataPrice = 4000;
+  int dataPricePromo = 4000;
 
-  int price = 3000;
-  int pricePromo = 2000;
+  int price = 4000;
+  int pricePromo = 4000;
 
   bool isMini = true;
   bool isSedang = false;
@@ -122,7 +122,7 @@ class _IsoloState extends State<Isolo> {
                             Row(
                               children: [
                                 Text(
-                                  'ISOLO ROUTE',
+                                  'OWODE ROUTE',
                                   style: poppinsTextStyle.copyWith(
                                     fontSize: 22,
                                     fontWeight: FontWeight.w500,
@@ -160,7 +160,7 @@ class _IsoloState extends State<Isolo> {
                             Row(
                               children: [
                                 Text(
-                                  '₦5000',
+                                  '₦8000',
                                   style: poppinsTextStyle.copyWith(
                                     fontSize: 14,
                                     color: kGreyColor,
