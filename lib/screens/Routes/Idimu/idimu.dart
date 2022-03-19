@@ -1,14 +1,15 @@
 import 'package:flutter/material.dart';
-import 'package:metro_live/screens/themes.dart';
 
-class DetailScreen extends StatefulWidget {
-  const DetailScreen({Key? key}) : super(key: key);
+import '../../themes.dart';
+
+class Idimu extends StatefulWidget {
+  const Idimu({Key? key}) : super(key: key);
 
   @override
-  State<DetailScreen> createState() => _DetailScreen();
+  State<Idimu> createState() => _IdimuState();
 }
 
-class _DetailScreen extends State<DetailScreen> {
+class _IdimuState extends State<Idimu> {
   int i = 1;
 
   int dataPrice = 3000;
@@ -166,7 +167,7 @@ class _DetailScreen extends State<DetailScreen> {
                             Row(
                               children: [
                                 Text(
-                                  'ASHAPO ROUTE',
+                                  'IDIMU ROUTE',
                                   style: poppinsTextStyle.copyWith(
                                     fontSize: 22,
                                     fontWeight: FontWeight.w500,

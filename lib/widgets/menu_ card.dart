@@ -1,98 +1,82 @@
-import 'package:flutter/material.dart';
-import 'package:metro_live/screens/detail_screen.dart';
-import 'package:metro_live/screens/themes.dart';
+// ignore: file_names
 import 'package:metro_live/models/menu.dart';
+import 'package:metro_live/screens/themes.dart';
+import 'package:flutter/material.dart';
 
 class MenuCard extends StatelessWidget {
   final Menu menu;
 
   MenuCard({required this.menu});
 
+  @override
   Widget build(BuildContext context) {
-    return InkWell(
-      onTap: () {
-        Navigator.push(
-            context,
-            MaterialPageRoute(
-              builder: (context) => DetailScreen(),
-            ));
-      },
-      child: Container(
-        margin: EdgeInsets.symmetric(vertical: 10),
-        child: Row(
-          children: [
-            Image.asset(
-              menu.image,
-              width: 130,
-              height: 110,
-            ),
-            SizedBox(
-              width: 20,
-            ),
-            Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                menu.isPromo
-                    ? Image.asset(
-                        'assets/Promo.png',
-                        width: 47,
-                        height: 16,
-                      )
-                    : Image.asset(
-                        'assets/Terlaris.png',
-                        width: 47,
-                        height: 16,
-                      ),
-                SizedBox(
-                  height: 4,
+    return Container(
+      margin: const EdgeInsets.symmetric(vertical: 10),
+      child: Row(
+        children: [
+          Image.asset(
+            menu.image,
+            width: 130,
+            height: 110,
+          ),
+          const SizedBox(
+            width: 20,
+          ),
+          Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              menu.isPromo
+                  ? Image.asset(
+                      'assets/Promo.png',
+                      width: 47,
+                      height: 16,
+                    )
+                  : Image.asset(
+                      'assets/Terlaris.png',
+                      width: 47,
+                      height: 16,
+                    ),
+              const SizedBox(
+                height: 4,
+              ),
+              Text(
+                menu.name,
+                style: poppinsTextStyle.copyWith(
+                  fontSize: 18,
+                  color: kBlackColor,
+                  fontWeight: FontWeight.w500,
                 ),
-                Text(
-                  menu.name,
-                  style: poppinsTextStyle.copyWith(
-                    fontSize: 18,
-                    color: kBlackColor,
-                    fontWeight: FontWeight.w500,
+              ),
+              const SizedBox(
+                height: 4,
+              ),
+              Row(
+                children: [
+                  Text(
+                    '₦ ${menu.price}',
+                    style: poppinsTextStyle.copyWith(
+                      fontSize: 14,
+                      color: kGreyColor,
+                      fontWeight: FontWeight.w500,
+                      decoration: TextDecoration.lineThrough,
+                    ),
                   ),
-                ),
-                SizedBox(
-                  height: 4,
-                ),
-                Row(
-                  children: [
-                    Text(
-                      '₦ ${menu.price}',
-                      style: poppinsTextStyle.copyWith(
-                        fontSize: 14,
-                        color: kGreyColor,
-                        fontWeight: FontWeight.w500,
-                        decoration: TextDecoration.lineThrough,
-                      ),
+                  const SizedBox(
+                    width: 3,
+                  ),
+                  Text(
+                    ' ₦ ${menu.pricePromo}',
+                    style: poppinsTextStyle.copyWith(
+                      fontSize: 14,
+                      color: kYellowColor,
+                      fontWeight: FontWeight.w500,
                     ),
-                    SizedBox(
-                      width: 3,
-                    ),
-                    Text(
-                      ' ₦ ${menu.pricePromo}',
-                      style: poppinsTextStyle.copyWith(
-                        fontSize: 14,
-                        color: kYellowColor,
-                        fontWeight: FontWeight.w500,
-                      ),
-                    ),
-                  ],
-                ),
-                // Text(
-                //   'Free Delivery',
-                //   style: poppinsTextStyle.copyWith(
-                //     fontSize: 12,
-                //     color: kGreyColor,
-                //     fontWeight: FontWeight.w300,
-                //   ),
-                // ),
-              ],
-            )
-          ],
-        ),
+                  ),
+                ],
+              ),
+            ],
+          )
+        ],
       ),
     );
   }

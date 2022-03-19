@@ -1,14 +1,15 @@
 import 'package:flutter/material.dart';
-import 'package:metro_live/screens/themes.dart';
 
-class DetailScreen extends StatefulWidget {
-  const DetailScreen({Key? key}) : super(key: key);
+import '../../themes.dart';
+
+class Bolade extends StatefulWidget {
+  const Bolade({Key? key}) : super(key: key);
 
   @override
-  State<DetailScreen> createState() => _DetailScreen();
+  State<Bolade> createState() => _BoladeState();
 }
 
-class _DetailScreen extends State<DetailScreen> {
+class _BoladeState extends State<Bolade> {
   int i = 1;
 
   int dataPrice = 3000;
@@ -166,7 +167,7 @@ class _DetailScreen extends State<DetailScreen> {
                             Row(
                               children: [
                                 Text(
-                                  'ASHAPO ROUTE',
+                                  'BOLADE ROUTE',
                                   style: poppinsTextStyle.copyWith(
                                     fontSize: 22,
                                     fontWeight: FontWeight.w500,

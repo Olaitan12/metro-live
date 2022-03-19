@@ -1,14 +1,15 @@
 import 'package:flutter/material.dart';
-import 'package:metro_live/screens/themes.dart';
 
-class DetailScreen extends StatefulWidget {
-  const DetailScreen({Key? key}) : super(key: key);
+import '../../themes.dart';
+
+class Ashapo extends StatefulWidget {
+  const Ashapo({Key? key}) : super(key: key);
 
   @override
-  State<DetailScreen> createState() => _DetailScreen();
+  State<Ashapo> createState() => _AshapoState();
 }
 
-class _DetailScreen extends State<DetailScreen> {
+class _AshapoState extends State<Ashapo> {
   int i = 1;
 
   int dataPrice = 3000;
