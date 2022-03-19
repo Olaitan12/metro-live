@@ -1,10 +1,22 @@
 import 'package:flutter/material.dart';
+import 'package:metro_live/screens/Routes/Abaranje/abaranje.dart';
+import 'package:metro_live/screens/Routes/Abati/abati.dart';
+import 'package:metro_live/screens/Routes/Agbara/agbara.dart';
+import 'package:metro_live/screens/Routes/Agbara_Totowu/agbara_totowu.dart';
+import 'package:metro_live/screens/Routes/Ayobo/ayobo.dart';
+import 'package:metro_live/screens/Routes/Bariga/bariga.dart';
 import 'package:metro_live/screens/Routes/Bolade/bolade.dart';
 import 'package:metro_live/screens/Routes/Ejigbo/ejigbo.dart';
+import 'package:metro_live/screens/Routes/Festac/festac.dart';
 import 'package:metro_live/screens/Routes/Idimu/idimu.dart';
+import 'package:metro_live/screens/Routes/Igando/igando.dart';
+import 'package:metro_live/screens/Routes/Isheri/isheri.dart';
 import 'package:metro_live/screens/Routes/Isolo/isolo.dart';
 import 'package:metro_live/screens/Routes/Itire/itire.dart';
+import 'package:metro_live/screens/Routes/Ketu/ketu.dart';
 import 'package:metro_live/screens/Routes/Matori/matori.dart';
+import 'package:metro_live/screens/Routes/Ojoo/ojoo.dart';
+import 'package:metro_live/screens/Routes/Shasha/shasha.dart';
 import 'package:metro_live/screens/Routes/ashanti/ashanti.dart';
 import 'package:metro_live/screens/Routes/ashapo/ashapo.dart';
 import 'package:metro_live/screens/themes.dart';
@@ -221,14 +233,14 @@ class HomeScreen extends StatelessWidget {
                     ),
                   ),
                   InkWell(
-                    // onTap: () {
-                    //   Navigator.push(
-                    //     context,
-                    //     MaterialPageRoute(
-                    //       builder: (context) => const DetailScreen(),
-                    //     ),
-                    //   );
-                    // },
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => const Shasha(),
+                        ),
+                      );
+                    },
                     child: MenuCard(
                       menu: Menu(
                           id: 9,
@@ -241,14 +253,14 @@ class HomeScreen extends StatelessWidget {
                     ),
                   ),
                   InkWell(
-                    // onTap: () {
-                    //   Navigator.push(
-                    //     context,
-                    //     MaterialPageRoute(
-                    //       builder: (context) => const DetailScreen(),
-                    //     ),
-                    //   );
-                    // },
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => const Bariga(),
+                        ),
+                      );
+                    },
                     child: MenuCard(
                       menu: Menu(
                           id: 10,
@@ -261,14 +273,14 @@ class HomeScreen extends StatelessWidget {
                     ),
                   ),
                   InkWell(
-                    // onTap: () {
-                    //   Navigator.push(
-                    //     context,
-                    //     MaterialPageRoute(
-                    //       builder: (context) => const DetailScreen(),
-                    //     ),
-                    //   );
-                    // },
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => const Abaranje(),
+                        ),
+                      );
+                    },
                     child: MenuCard(
                       menu: Menu(
                           id: 11,
@@ -281,14 +293,14 @@ class HomeScreen extends StatelessWidget {
                     ),
                   ),
                   InkWell(
-                    // onTap: () {
-                    //   Navigator.push(
-                    //     context,
-                    //     MaterialPageRoute(
-                    //       builder: (context) => const DetailScreen(),
-                    //     ),
-                    //   );
-                    // },
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => const Ayobo(),
+                        ),
+                      );
+                    },
                     child: MenuCard(
                       menu: Menu(
                           id: 12,
@@ -301,14 +313,14 @@ class HomeScreen extends StatelessWidget {
                     ),
                   ),
                   InkWell(
-                    // onTap: () {
-                    //   Navigator.push(
-                    //     context,
-                    //     MaterialPageRoute(
-                    //       builder: (context) => const DetailScreen(),
-                    //     ),
-                    //   );
-                    // },
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => const Ketu(),
+                        ),
+                      );
+                    },
                     child: MenuCard(
                       menu: Menu(
                           id: 13,
@@ -321,14 +333,14 @@ class HomeScreen extends StatelessWidget {
                     ),
                   ),
                   InkWell(
-                    // onTap: () {
-                    //   Navigator.push(
-                    //     context,
-                    //     MaterialPageRoute(
-                    //       builder: (context) => const DetailScreen(),
-                    //     ),
-                    //   );
-                    // },
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => const Isheri(),
+                        ),
+                      );
+                    },
                     child: MenuCard(
                       menu: Menu(
                           id: 14,
@@ -341,14 +353,14 @@ class HomeScreen extends StatelessWidget {
                     ),
                   ),
                   InkWell(
-                    // onTap: () {
-                    //   Navigator.push(
-                    //     context,
-                    //     MaterialPageRoute(
-                    //       builder: (context) => const DetailScreen(),
-                    //     ),
-                    //   );
-                    // },
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => const Igando(),
+                        ),
+                      );
+                    },
                     child: MenuCard(
                       menu: Menu(
                           id: 15,
@@ -361,14 +373,14 @@ class HomeScreen extends StatelessWidget {
                     ),
                   ),
                   InkWell(
-                    // onTap: () {
-                    //   Navigator.push(
-                    //     context,
-                    //     MaterialPageRoute(
-                    //       builder: (context) => const DetailScreen(),
-                    //     ),
-                    //   );
-                    // },
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => const Abati(),
+                        ),
+                      );
+                    },
                     child: MenuCard(
                       menu: Menu(
                           id: 16,
@@ -382,12 +394,12 @@ class HomeScreen extends StatelessWidget {
                   ),
                   InkWell(
                     onTap: () {
-                      // Navigator.push(
-                      //   context,
-                      //   MaterialPageRoute(
-                      //     builder: (context) => const DetailScreen(),
-                      //   ),
-                      // );
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => const Ojoo(),
+                        ),
+                      );
                     },
                     child: MenuCard(
                       menu: Menu(
@@ -402,12 +414,12 @@ class HomeScreen extends StatelessWidget {
                   ),
                   InkWell(
                     onTap: () {
-                      // Navigator.push(
-                      //   context,
-                      //   MaterialPageRoute(
-                      //     builder: (context) => const DetailScreen(),
-                      //   ),
-                      // );
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => const Festac(),
+                        ),
+                      );
                     },
                     child: MenuCard(
                       menu: Menu(
@@ -422,12 +434,12 @@ class HomeScreen extends StatelessWidget {
                   ),
                   InkWell(
                     onTap: () {
-                      // Navigator.push(
-                      //   context,
-                      //   MaterialPageRoute(
-                      //     builder: (context) => const DetailScreen(),
-                      //   ),
-                      // );
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => const Agbara(),
+                        ),
+                      );
                     },
                     child: MenuCard(
                       menu: Menu(
@@ -442,12 +454,12 @@ class HomeScreen extends StatelessWidget {
                   ),
                   InkWell(
                     onTap: () {
-                      // Navigator.push(
-                      //   context,
-                      //   MaterialPageRoute(
-                      //     builder: (context) => const DetailScreen(),
-                      //   ),
-                      // );
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => const AgbaraTotowu(),
+                        ),
+                      );
                     },
                     child: MenuCard(
                       menu: Menu(
