@@ -2,21 +2,21 @@ import 'package:flutter/material.dart';
 
 import '../../themes.dart';
 
-class Ashanti extends StatefulWidget {
-  const Ashanti({Key? key}) : super(key: key);
+class OwodeWinners extends StatefulWidget {
+  const OwodeWinners({Key? key}) : super(key: key);
 
   @override
-  State<Ashanti> createState() => _AshantiState();
+  State<OwodeWinners> createState() => _OwodeWinnersState();
 }
 
-class _AshantiState extends State<Ashanti> {
+class _OwodeWinnersState extends State<OwodeWinners> {
   int i = 1;
 
-  int dataPrice = 3000;
-  int dataPricePromo = 2000;
+  int dataPrice = 4000;
+  int dataPricePromo = 4000;
 
-  int price = 3000;
-  int pricePromo = 2000;
+  int price = 4000;
+  int pricePromo = 4000;
 
   bool isMini = true;
   bool isSedang = false;
@@ -122,7 +122,7 @@ class _AshantiState extends State<Ashanti> {
                             Row(
                               children: [
                                 Text(
-                                  'ASHANTI ROUTE',
+                                  'OWODE WINNERS ROUTE',
                                   style: poppinsTextStyle.copyWith(
                                     fontSize: 22,
                                     fontWeight: FontWeight.w500,
@@ -160,7 +160,7 @@ class _AshantiState extends State<Ashanti> {
                             Row(
                               children: [
                                 Text(
-                                  '₦5000',
+                                  '₦8000',
                                   style: poppinsTextStyle.copyWith(
                                     fontSize: 14,
                                     color: kGreyColor,

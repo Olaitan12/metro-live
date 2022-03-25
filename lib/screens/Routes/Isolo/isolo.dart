@@ -277,7 +277,7 @@ class _IsoloState extends State<Isolo> {
                                 },
                                 color: kYellowColor,
                                 child: Text(
-                                  'Continue to payment',
+                                  'Generate Receipt',
                                   style: poppinsTextStyle.copyWith(
                                     fontSize: 18,
                                     fontWeight: FontWeight.w500,

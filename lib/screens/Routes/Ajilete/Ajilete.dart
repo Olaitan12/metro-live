@@ -277,7 +277,7 @@ class _AjileteState extends State<Ajilete> {
                                 },
                                 color: kYellowColor,
                                 child: Text(
-                                  'Continue to payment',
+                                  'Generate Receipt',
                                   style: poppinsTextStyle.copyWith(
                                     fontSize: 18,
                                     fontWeight: FontWeight.w500,

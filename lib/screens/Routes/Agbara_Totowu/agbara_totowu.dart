@@ -277,7 +277,7 @@ class _AgbaraTotowuState extends State<AgbaraTotowu> {
                                 },
                                 color: kYellowColor,
                                 child: Text(
-                                  'Continue to payment',
+                                  'Generate Receipt',
                                   style: poppinsTextStyle.copyWith(
                                     fontSize: 18,
                                     fontWeight: FontWeight.w500,
