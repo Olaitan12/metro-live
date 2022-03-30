@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../../payment_option.dart';
 import '../../themes.dart';
 
 class Ikorodu extends StatefulWidget {
@@ -269,15 +270,15 @@ class _IkoroduState extends State<Ikorodu> {
                                 disabledElevation: 0,
                                 highlightElevation: 0,
                                 onPressed: () {
-                                  showDialog(
-                                    context: context,
-                                    builder: (BuildContext) =>
-                                        _buildPopupDialog(context),
+                                  Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                        builder: (context) => const Payment()),
                                   );
                                 },
                                 color: kYellowColor,
                                 child: Text(
-                                  'Generate Receipt',
+                                  'Continue to Payment',
                                   style: poppinsTextStyle.copyWith(
                                     fontSize: 18,
                                     fontWeight: FontWeight.w500,

@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:share/share.dart';
 
+import '../../payment_option.dart';
 import '../../themes.dart';
 
 class OwodeWinners extends StatefulWidget {
@@ -87,7 +89,9 @@ class _OwodeWinnersState extends State<OwodeWinners> {
                     child: Image.asset('assets/btn_back.png', width: 40),
                   ),
                   InkWell(
-                    onTap: () {},
+                    onTap: () {
+                      Share.share("sjsjsj");
+                    },
                     child: Image.asset('assets/btn_share.png', width: 40),
                   ),
                 ],
@@ -269,15 +273,15 @@ class _OwodeWinnersState extends State<OwodeWinners> {
                                 disabledElevation: 0,
                                 highlightElevation: 0,
                                 onPressed: () {
-                                  showDialog(
-                                    context: context,
-                                    builder: (BuildContext) =>
-                                        _buildPopupDialog(context),
+                                  Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                        builder: (context) => const Payment()),
                                   );
                                 },
                                 color: kYellowColor,
                                 child: Text(
-                                  'Generate Receipt',
+                                  'Continue to Payment',
                                   style: poppinsTextStyle.copyWith(
                                     fontSize: 18,
                                     fontWeight: FontWeight.w500,

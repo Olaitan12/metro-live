@@ -37,9 +37,6 @@ import 'package:metro_live/screens/Routes/powerline/powerline.dart';
 import 'package:metro_live/screens/themes.dart';
 import 'package:metro_live/widgets/menu_%20card.dart';
 import 'package:metro_live/models/menu.dart';
-
-import 'detail_screen.dart';
-
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
 

@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:metro_live/screens/payment_option.dart';
+import 'package:share/share.dart';
 
 import '../../themes.dart';
 
@@ -87,7 +89,10 @@ class _AbaranjeState extends State<Abaranje> {
                     child: Image.asset('assets/btn_back.png', width: 40),
                   ),
                   InkWell(
-                    onTap: () {},
+                    onTap: () {
+                      Share.share(
+                          "Download the new CIBN CONFERENCE App and share with your bankers friends.\nPlayStore -  https://bit.ly/3zFRYT3");
+                    },
                     child: Image.asset('assets/btn_share.png', width: 40),
                   ),
                 ],
@@ -269,15 +274,15 @@ class _AbaranjeState extends State<Abaranje> {
                                 disabledElevation: 0,
                                 highlightElevation: 0,
                                 onPressed: () {
-                                  showDialog(
-                                    context: context,
-                                    builder: (BuildContext) =>
-                                        _buildPopupDialog(context),
+                                  Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                        builder: (context) => const Payment()),
                                   );
                                 },
                                 color: kYellowColor,
                                 child: Text(
-                                  'Generate Receipt',
+                                  'Continue to Payment',
                                   style: poppinsTextStyle.copyWith(
                                     fontSize: 18,
                                     fontWeight: FontWeight.w500,
@@ -299,31 +304,4 @@ class _AbaranjeState extends State<Abaranje> {
       ),
     );
   }
-}
-
-Widget _buildPopupDialog(BuildContext context) {
-  return AlertDialog(
-    title: const Text('PAYMENT OPTION'),
-    content: Column(
-      mainAxisSize: MainAxisSize.min,
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: const <Widget>[
-        Text("Cash"),
-        Text("Transfer"),
-      ],
-    ),
-    actions: <Widget>[
-      Row(
-        children: [
-          FlatButton(
-            onPressed: () {
-              Navigator.of(context).pop();
-            },
-            textColor: Theme.of(context).primaryColor,
-            child: const Text('Close'),
-          ),
-        ],
-      ),
-    ],
-  );
 }
