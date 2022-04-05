@@ -273,12 +273,12 @@ class _BoladeState extends State<Bolade> {
                                   Navigator.push(
                                     context,
                                     MaterialPageRoute(
-                                        builder: (context) => const Payment()),
+                                        builder: (context) => Payment()),
                                   );
                                 },
                                 color: kYellowColor,
                                 child: Text(
-                                  'Continue to Payment',
+                                  'Create Invoice',
                                   style: poppinsTextStyle.copyWith(
                                     fontSize: 18,
                                     fontWeight: FontWeight.w500,

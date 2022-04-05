@@ -36,11 +36,11 @@ dependencies:
   cupertino_icons: ^1.0.2
   google_fonts: 
   share:
-  invoiceninja:
-  url_launcher:
-  syncfusion_flutter_signaturepad: ^19.4.56
-  flutterwave: 
+  pdf: ^3.6.0
+  path_provider: ^2.0.5
+  open_document: ^1.0.3
   
+ 
 dev_dependencies:
   flutter_test:
     sdk: flutter
