@@ -1,20 +1,12 @@
+import 'package:metro_live/env/routing.dart';
 import 'package:flutter/material.dart';
-import 'package:metro_live/screens/home_screen.dart';
-
+import 'package:get/get.dart';
 void main() {
-  runApp(const MyApp());
-}
-
-class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
-
-  // This widget is the root of your application.
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'METRO LIVESTOCK',
-      theme: ThemeData(),
-      home: const HomeScreen(),
-    );
-  }
+  runApp(GetMaterialApp(
+    debugShowCheckedModeBanner: false,
+    theme: ThemeData(scaffoldBackgroundColor: Colors.white),
+    // home: TestScreen(),
+    initialRoute: "/",
+    getPages: AppRouting.ROUTES,
+  ));
 }
