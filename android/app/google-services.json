@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "512514863398",
+    "project_id": "metrolivestockdelivery",
+    "storage_bucket": "metrolivestockdelivery.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:512514863398:android:11ab5c35ddb614678c51e7",
+        "android_client_info": {
+          "package_name": "com.example.metro_live"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "512514863398-q1jvr47o2o38t65s6198frbnn51m6e93.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBRKemlEnJAkfrCKILcKoA9BppQApBxTQs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "512514863398-q1jvr47o2o38t65s6198frbnn51m6e93.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -7,14 +7,13 @@ import 'package:pdf/widgets.dart';
 
 class PdfInvoiceApi {
   static Future<Uint8List> generate(Invoice invoice) async {
-    const paymentTerms = '{15} days';
-    final titles = <String>['Invoice Number:', 'Invoice Date:', 'Due Date:'];
-    final data = <String>[
-      "100",
-      "15",
-      paymentTerms,
-      "266",
-    ];
+    // const paymentTerms = '{15} days';
+    // final titles = <String>['Invoice Date:', 'Due Date:'];
+    // final data = <String>[
+    //   "15",
+    //   paymentTerms,
+    //   "266",
+    // ];
     final headers = ['Description', 'Quantity', 'Price per item', 'Total'];
     final invoices_data = [...invoice.items.map((e) => e.toList()).toList()];
     final pdf = Document();
@@ -70,15 +69,15 @@ class PdfInvoiceApi {
                     Text(invoice.from.address!),
                   ],
                 ),
-                Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: List.generate(titles.length, (index) {
-                    final title = titles[index];
-                    final value = data[index];
+                // Column(
+                //   crossAxisAlignment: CrossAxisAlignment.start,
+                //   children: List.generate(titles.length, (index) {
+                //     final title = titles[index];
+                //     final value = data[index];
 
-                    return buildText(title: title, value: value, width: 200);
-                  }),
-                ),
+                //     return buildText(title: title, value: value, width: 200);
+                //   }),
+                // ),
               ],
             ),
           ],

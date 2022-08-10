@@ -17,7 +17,7 @@ class Functions {
   static void saveInvoice(
       {required String name,
       required Uint8List fileBytes,
-      String path = "/storage/emulated/0/Documents"}) async {
+      String path = '/storage/emulated/0/Download'}) async {
     try {
       bool checkPermission = await Permission.storage.request().isGranted;
       if (checkPermission) {

@@ -24,76 +24,77 @@ class InvoicePreviewScreen extends StatelessWidget {
         showBackArrow: true,
       ),
       body: FutureBuilder(
-          future: PdfInvoiceApi.generate(args['invoice']),
-          builder: (context, snapshot) {
-            if (snapshot.hasData) {
-              dynamic _documentBytes = snapshot.data;
-
-              return Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Expanded(
-                      child: Container(
-                          margin: EdgeInsets.symmetric(
-                              horizontal: Dimensions.calcW(15),
-                              vertical: Dimensions.calcH(8)),
-                          decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(50)),
-                          child: SfPdfViewer.memory(
-                            _documentBytes,
-                            initialZoomLevel: 0.5,
-                          )),
-                    ),
-                    SizedBox(
-                      height: Get.size.height * 0.2,
-                      child: Column(
-                        children: [
-                          CustomBtn(
-                            label: AppStrings.SAVE_BTN,
-                            action: () {
-                              Get.find<AllInvoiceController>()
-                                  .createNewInvoice(args["invoice"]);
-                              Get.back();
-                            },
-                            color: AppColors.kPrimaryColor,
-                            textColor: Colors.white,
-                          ),
-                          // InkWell(
-                          //   onTap: () {},
-                          //   splashColor: AppColors.kPrimaryLight,
-                          //   child: Container(
-                          //       padding: const EdgeInsets.symmetric(
-                          //           vertical: 10, horizontal: 16),
-                          //       decoration: BoxDecoration(
-                          //         border:
-                          //             Border.all(color: AppColors.kPrimaryDark),
-                          //         borderRadius: BorderRadius.circular(4),
-                          //       ),
-                          //       child: Text(
-                          //         AppStrings.HOME_BTN.toUpperCase(),
-                          //         style: TextStyle(
-                          //           color: AppColors.kPrimaryDark,
-                          //           fontWeight: FontWeight.bold,
-                          //           fontSize: Dimensions.calcH(15),
-                          //         ),
-                          //       )),
-                          // )
-                        ],
-                      ),
-                    )
-                  ]);
-            } else {
-              return Center(
-                child: SizedBox(
-                  height: Dimensions.calcH(80),
-                  width: Dimensions.calcW(80),
-                  child: CircularProgressIndicator(
-                    color: AppColors.kPrimaryColor,
-                  ),
+        future: PdfInvoiceApi.generate(args['invoice']),
+        builder: (context, snapshot) {
+          if (snapshot.hasData) {
+            dynamic _documentBytes = snapshot.data;
+            return Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Expanded(
+                  child: Container(
+                      margin: EdgeInsets.symmetric(
+                          horizontal: Dimensions.calcW(15),
+                          vertical: Dimensions.calcH(8)),
+                      decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(50)),
+                      child: SfPdfViewer.memory(
+                        _documentBytes,
+                        initialZoomLevel: 0.5,
+                      )),
                 ),
-              );
-            }
-          }),
+                SizedBox(
+                  height: Get.size.height * 0.2,
+                  child: Column(
+                    children: [
+                      CustomBtn(
+                        label: AppStrings.SAVE_BTN,
+                        action: () {
+                          Get.find<AllInvoiceController>()
+                              .createNewInvoice(args["invoice"]);
+                          Get.back();
+                        },
+                        color: AppColors.kPrimaryColor,
+                        textColor: Colors.white,
+                      ),
+                      // InkWell(
+                      //   onTap: () {},
+                      //   splashColor: AppColors.kPrimaryLight,
+                      //   child: Container(
+                      //       padding: const EdgeInsets.symmetric(
+                      //           vertical: 10, horizontal: 16),
+                      //       decoration: BoxDecoration(
+                      //         border:
+                      //             Border.all(color: AppColors.kPrimaryDark),
+                      //         borderRadius: BorderRadius.circular(4),
+                      //       ),
+                      //       child: Text(
+                      //         AppStrings.HOME_BTN.toUpperCase(),
+                      //         style: TextStyle(
+                      //           color: AppColors.kPrimaryDark,
+                      //           fontWeight: FontWeight.bold,
+                      //           fontSize: Dimensions.calcH(15),
+                      //         ),
+                      //       )),
+                      // )
+                    ],
+                  ),
+                )
+              ],
+            );
+          } else {
+            return Center(
+              child: SizedBox(
+                height: Dimensions.calcH(80),
+                width: Dimensions.calcW(80),
+                child: CircularProgressIndicator(
+                  color: AppColors.kPrimaryColor,
+                ),
+              ),
+            );
+          }
+        },
+      ),
     );
   }
 }
